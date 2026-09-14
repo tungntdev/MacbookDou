@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="docs/icon.png" width="128" alt="MacbookDou icon">
+  <img src="docs/icon.png" width="128" alt="MacbookDuo icon">
 
-  # MacbookDou
+  # MacbookDuo
 
   **Hiệu ứng đóng nắp kiểu "Duo" cho MacBook của bạn.**
 
@@ -10,14 +10,14 @@
   [![macOS](https://img.shields.io/badge/macOS-14%2B-black?logo=apple)](#yêu-cầu)
   [![Swift](https://img.shields.io/badge/Swift-6-F05138?logo=swift&logoColor=white)](#build-từ-source)
 
-  [**⬇ Tải file .dmg**](../../releases/latest/download/MacbookDou.dmg) &nbsp;·&nbsp; [Build từ source](#build-từ-source)
+  [**⬇ Tải file .dmg**](../../releases/latest/download/MacbookDuo.dmg) &nbsp;·&nbsp; [Build từ source](#build-từ-source)
 </div>
 
 ---
 
 ## Đây là gì
 
-MacbookDou là app chạy nền trên thanh menu bar, tự viết từ đầu bằng Swift —
+MacbookDuo là app chạy nền trên thanh menu bar, tự viết từ đầu bằng Swift —
 không dùng lại code của bất kỳ ai. Khi bạn khép nắp MacBook lại một góc,
 app đọc cảm biến góc bản lề, chụp/stream nội dung màn hình, rồi dùng Metal
 để vẽ lại nó dưới dạng một tấm hình phối cảnh nghiêng dần, mờ dần và tối
@@ -41,21 +41,21 @@ dần — đúng như cảm giác đang nhìn một tấm kính khép lại.
 
 ## Cài đặt
 
-1. [Tải file `MacbookDou.dmg`](../../releases/latest/download/MacbookDou.dmg) ở trên.
-2. Mở file `.dmg`, kéo **MacbookDou** vào thư mục **Applications**.
+1. [Tải file `MacbookDuo.dmg`](../../releases/latest/download/MacbookDuo.dmg) ở trên.
+2. Mở file `.dmg`, kéo **MacbookDuo** vào thư mục **Applications**.
 3. Mở app lần đầu: vì app **chưa được ký bằng Apple Developer ID trả phí**
    (chỉ cần thiết cho việc phân phối rộng rãi), macOS sẽ cảnh báo *"không
    xác định được nhà phát triển"*. Đây là cảnh báo bình thường với app mã
    nguồn mở dạng này, không phải app bị lỗi hay chứa mã độc — xử lý một
    trong hai cách:
-   - Chuột phải (hoặc Control-click) vào **MacbookDou** trong Applications
+   - Chuột phải (hoặc Control-click) vào **MacbookDuo** trong Applications
      → chọn **Open** → bấm **Open** lần nữa ở hộp thoại hiện ra. Chỉ cần
      làm một lần duy nhất.
    - Hoặc: System Settings → **Privacy & Security**, cuộn xuống thấy dòng
-     nhắc về MacbookDou, bấm **Open Anyway**.
+     nhắc về MacbookDuo, bấm **Open Anyway**.
 4. Cấp quyền **Screen Recording** khi được hỏi (bắt buộc để hiệu ứng chụp
    được màn hình) — System Settings → Privacy & Security → Screen
-   Recording → bật MacbookDou.
+   Recording → bật MacbookDuo.
 5. App chạy nền trên menu bar (icon hình laptop). Bấm vào đó để mở Settings.
 
 ## Build từ source
@@ -66,9 +66,9 @@ Yêu cầu Xcode với toolchain Swift 6 trở lên.
 ./build.sh --run
 ```
 
-Lệnh trên build bản release, đóng gói thành `build/MacbookDou.app` (đã có
+Lệnh trên build bản release, đóng gói thành `build/MacbookDuo.app` (đã có
 icon, đã ký code) và mở app lên. Thêm `--dmg` để đóng gói luôn thành
-`build/MacbookDou.dmg`:
+`build/MacbookDuo.dmg`:
 
 ```sh
 ./build.sh --dmg --run
@@ -104,7 +104,7 @@ dựng sẵn để bạn thấy hiệu ứng ngay, không cần đụng vào n�
 
 - `Sources/HingeSensorKit/` — thư viện độc lập đọc cảm biến góc bản lề qua
   IOKit HID (usage page `0x20`, usage `0x8A`).
-- `Sources/MacbookDou/` — phần app: capture màn hình
+- `Sources/MacbookDuo/` — phần app: capture màn hình
   (`ScreenStillCapture`, `ScreenLiveCapture`), render
   (`EffectRenderer`, `EffectShaderSource`, `PaddedPictureTexture`,
   `Perspective`), state machine điều khiển hiệu ứng (`EffectController`),

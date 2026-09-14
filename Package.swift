@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "MacbookDou",
+    name: "MacbookDuo",
     defaultLocalization: "en",
     platforms: [.macOS(.v14)],
     targets: [
@@ -11,9 +11,9 @@ let package = Package(
             path: "Sources/HingeSensorKit"
         ),
         .executableTarget(
-            name: "MacbookDou",
+            name: "MacbookDuo",
             dependencies: ["HingeSensorKit"],
-            path: "Sources/MacbookDou",
+            path: "Sources/MacbookDuo",
             resources: [.process("Resources")]
         ),
     ]

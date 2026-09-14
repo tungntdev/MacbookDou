@@ -17,7 +17,7 @@ final class MenuBarController: NSObject {
         super.init()
 
         if let button = statusItem.button {
-            button.image = NSImage(systemSymbolName: "laptopcomputer", accessibilityDescription: "MacbookDou")
+            button.image = NSImage(systemSymbolName: "laptopcomputer", accessibilityDescription: "MacbookDuo")
             button.imagePosition = .imageLeading
             button.target = self
             button.action = #selector(togglePopover)

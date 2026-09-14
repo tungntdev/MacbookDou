@@ -108,7 +108,7 @@ final class EffectController: ObservableObject {
         builtInDisplayID = BuiltInDisplay.directDisplayID()
         observeSystemEvents()
         DistributedNotificationCenter.default().addObserver(
-            forName: Notification.Name("com.local.MacbookDou.preview"), object: nil, queue: .main
+            forName: Notification.Name("com.local.MacbookDuo.preview"), object: nil, queue: .main
         ) { [weak self] _ in
             MainActor.assumeIsolated { self?.runPreview() }
         }

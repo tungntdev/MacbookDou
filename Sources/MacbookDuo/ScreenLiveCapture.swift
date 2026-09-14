@@ -155,5 +155,5 @@ final class ScreenLiveCapture {
 }
 
 private extension DispatchQueue {
-    static let liveCaptureQueue = DispatchQueue(label: "com.local.MacbookDou.live-capture", qos: .userInteractive)
+    static let liveCaptureQueue = DispatchQueue(label: "com.local.MacbookDuo.live-capture", qos: .userInteractive)
 }

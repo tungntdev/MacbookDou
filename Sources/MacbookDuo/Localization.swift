@@ -47,7 +47,7 @@ private let localizationBundle: Bundle = {
     if Bundle.main.path(forResource: "en", ofType: "lproj") != nil {
         return Bundle.main
     }
-    let sideBySide = Bundle.main.bundleURL.appendingPathComponent("MacbookDou_MacbookDou.bundle")
+    let sideBySide = Bundle.main.bundleURL.appendingPathComponent("MacbookDuo_MacbookDuo.bundle")
     if let bundle = Bundle(url: sideBySide), bundle.path(forResource: "en", ofType: "lproj") != nil {
         return bundle
     }

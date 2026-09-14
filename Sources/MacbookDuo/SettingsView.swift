@@ -55,7 +55,7 @@ struct SettingsView: View {
 
     private var header: some View {
         HStack {
-            Text("MacbookDou").font(.headline)
+            Text("MacbookDuo").font(.headline)
             Spacer()
             Text(String(format: "%.1f°", controller.currentAngleDegrees))
                 .font(.system(.body, design: .monospaced))

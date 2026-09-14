@@ -5,15 +5,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>MacbookDou</string>
+	<string>MacbookDuo</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.local.MacbookDou</string>
+	<string>com.local.MacbookDuo</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>MacbookDou</string>
+	<string>MacbookDuo</string>
 	<key>CFBundleDisplayName</key>
-	<string>MacbookDou</string>
+	<string>MacbookDuo</string>
 	<key>CFBundleIconFile</key>
 	<string>AppIcon</string>
 	<key>CFBundlePackageType</key>
